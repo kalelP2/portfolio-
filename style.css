@@ -177,6 +177,7 @@ img {
   justify-content: center;
   margin: 20px;
   width: 500px;
+  height: 200px;
 }
 
 /* Each image box */
@@ -194,7 +195,7 @@ img {
 /* Styling for images */
 .image-box img {
   width: 100px;
-  height: auto;
+  height: 200px;
   border-radius: 5px;
 }
 
@@ -207,6 +208,7 @@ img {
   border-radius: 5px;
   margin-top: 5px;
   width: 150px;
+  height: 200px;
 }
 
 #project1, #project2, #project3, #project4, #project5 {
