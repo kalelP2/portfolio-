@@ -169,46 +169,44 @@ img {
   display: inline;
 }
 
-/* Gallery container */
+/* Gallery container styling */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin: 20px;
-  width: 500px;
-  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
 /* Each image box */
 .image-box {
-  width: 180px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 2px solid #8000ff;
-  border-radius: 8px;
-  padding: 10px;
-  color: #ffffff;
-  box-shadow: 1px 10px 10px #000000;
+  width: 200px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #8000ff;
+  border-radius: 8px;
+  padding: 15px;
+  color: #ffffff;
+  box-shadow: 1px 10px 10px #000000;
 }
 
 /* Styling for images */
 .image-box img {
-  width: 100px;
-  height: 200px;
-  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 /* Description styling */
 .description {
-  color: #ffffff;
-  font-size: 12px;
-  border: 1px solid #333;
-  padding: 5px;
-  border-radius: 5px;
-  margin-top: 5px;
-  width: 150px;
-  height: 200px;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  text-align: center;
 }
 
 #project1, #project2, #project3, #project4, #project5 {
