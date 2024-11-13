@@ -205,7 +205,7 @@ img {
   color: #ffffff;
   font-size: 12px;
   padding: 5px;
-  border: 1px solid #333; /* Keep border on description */
+  border: 5px solid #333; /* Keep border on description */
   border-radius: 5px;
   margin-top: 5px;
   text-align: center;
