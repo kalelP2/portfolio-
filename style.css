@@ -1,249 +1,262 @@
-/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
-  background-image: url(IMG_7219.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-image: url(Bgrnd.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
 }
-
+/* Banner */
 .banner {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 15px;
-  text-align: left;
-  font-family: fantasy;
-  text-transform: capitalize;
-  text-shadow: 3px 3px 3px #ffffff;
-  border: 3px solid #ffffff;
-  box-shadow: 8px 8px 8px #000000;
+  background-color: #000000;
+  color: #800080;
+  padding: 15px;
+  text-align: left;
+  font-family: fantasy;
+  text-transform: capitalize;
+  text-shadow: 3px 3px 3px #ffffff;
+  border: 3px solid #ffffff;
+  box-shadow: 8px 8px 8px #000000;
 }
 
-
-/* Navigation Bar Styling */
+/* Navigation Bar */
 .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    background-color: #4b0082; /* Darker purple for navbar */
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #575757;
+  padding: 10px 0;
 }
 
 .navbar a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    background-color: #8000ff; /* Match with banner */
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 17px;
+  transition: background-color 0.3s;
+  border: 2px solid transparent;
 }
 
 .navbar a:hover {
-    background-color: #9a4df6; /* Lighten on hover */
+  background-color: #575757;
+  border-color: #8000ff;
 }
-
-/* Header Styling */
-header h1 {
-    text-align: center;
-    color: #4b0082;
-    margin: 20px 0;
-}
-
 .container {
-  background-color: rgba(255, 0, 0, 0.5);
-  color: #ffffff;
-  border: 5px solid #ffffff;
-  margin: 30px auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 800px;
-  border-radius: 8px;
-  box-shadow: 1px 10px 10px #000000;
-  text-align: left;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #ffffff;
+  border: 5px solid #ffffff;
+  margin: 30px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 1px 10px 10px #000000;
+  text-align: left;
 }
-#cfu1, #cfu2, #cfu3, #cfu4, #itsumi, #overwatch, #anime, #art, #volleyball {
-  border: 2px solid #8000ff;
-  padding: 5px;
-  display: block;
-  margin: 1px;
-  background-color: rgba(67, 39, 99, 0.5);
-  color: #ffffff;
-  width: 80100px;
+
+/* Info Sections */
+.info-section {
+  border: 2px solid #8000ff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+.info-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Image Styling */
+img {
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  margin: 15px 0;
+  display: block;
+}
+
+/* Individual Section IDs */
+#cfu1, #cfu2, #cfu3, #cfu4, #Family, #Friends, #Movies, #hobbies {
+  border: 2px solid #8000ff;
+  padding: 5px;
+  display: block;
+  margin: 1px;
+  background-color: rgba(67, 39, 99, 0.5);
+  color: #ffffff;
 }
 #cfu5 {
-  border: 2px solid #8000ff;
-  padding: 5px;
-  display: block;
-  margin: 1px;
-  color: #ffffff;
-  text-decoration: none;
-  background-color: rgba(67, 39, 99, 0.5);
+  border: 2px solid #8000ff;
+  padding: 5px;
+  display: block;
+  margin: 1px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgba(67, 39, 99, 0.5);
 }
 #cfu1:hover, #cfu2:hover, #cfu3:hover, #cfu4:hover, #cfu5:hover {
-  background-color: #575757;
+  background-color: #575757;
 }
 
 .wave {
-  background-color: rgba(67, 39, 99, 0.5);
-  color: #ffffff;
-  height: 50px;
-  overflow: hidden;
-  width: 80%;
-  position: relative;
-  left: 10%;
-  transition: height 10s;
+  background-color: rgba(67, 39, 99, 0.5);
+  color: #ffffff;
+  height: 75px;
+  overflow: hidden;
+  width: 80%;
+  position: relative;
+  left: 10%;
+  transition: height 10s;
 }
 
 .contact-info h2 {
-  font-size: 2em;
-  margin-bottom: 15px;
-  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #ffffff;
 }
 .contact-info {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 30px;
-  margin: 30px auto;
-  width: 80%;
-  min-height: 900px;
-  max-width: 600px;
-  border: 2px solid #8000ff;
-  border-radius: 8px;
-  color: #ffffff;
-  text-align: center;
-  box-shadow: 1px 10px 10px #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  margin: 30px auto;
+  width: 80%;
+  min-height: 900px;
+  max-width: 600px;
+  border: 2px solid #8000ff;
+  border-radius: 8px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 1px 10px 10px #000000;
 }
 
-/* Gallery Styling */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-/* Each image box with color */
-.image-box {
-    width: 200px;
-    background-color: rgba(128, 0, 255, 0.85); /* Purple background with opacity */
-    border: 2px solid #4b0082; /* Darker border to match */
-    border-radius: 8px;
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    transition: transform 0.2s;
-}
-
-.image-box:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* Image styling inside image box */
-.image-box img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    border: 2px solid #ffffff; /* White border around images */
-    margin-bottom: 10px;
-}
-
-/* Description text */
-.description {
-    font-size: 14px;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    background-color: rgba(255, 255, 255, 0.1); /* Light overlay */
-    border-radius: 5px;
-}
-
+/* Style for email-info container */
 .email-info {
-  margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* Each email section styled separately */
 .email-section {
-  margin-bottom: 20px;
-  text-align: left;
-  padding: 10px;
-  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /* Style for email titles and icons */
 .email-section h3 {
-  font-size: 1.2em;
-  color: #ffffff;
-  margin-bottom: 5px;
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 5px;
 }
 
 .email-icon {
-  font-size: 1.2em;
-  color: #ffffff;
-  margin-right: 8px;
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-right: 8px;
 }
 
 .email-section p {
-  margin: 0;
-  font-size: 1em;
-  color: #ffffff;
-  display: inline;
+  margin: 0;
+  font-size: 1em;
+  color: #ffffff;
+  display: inline;
 }
+
+/* Gallery container */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Each image box */
+.image-box {
+  width: 200px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #8000ff;
+  border-radius: 8px;
+  padding: 10px;
+  color: #ffffff;
+  box-shadow: 1px 10px 10px #000000;
+}
+
+/* Styling for images */
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Description styling */
+.description {
+  color: #ffffff;
+  font-size: 12px;
+  border: 1px solid #333;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
 #project1, #project2, #project3, #project4, #project5 {
-  border: 2px solid #8000ff;
-  padding: 5px;
-  display: block;
-  margin: 1px;
-  background-color: rgba(67, 39, 99, 0.5);
-  color: #ffffff;
+  border: 2px solid #8000ff;
+  padding: 5px;
+  display: block;
+  margin: 1px;
+  background-color: rgba(67, 39, 99, 0.5);
+  color: #ffffff;
 }
 
 /* On hover, allow scrolling */
 .wave:hover {
-  max-height: 400px;
-  overflow-y: auto;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 /* Project header styling */
 .wave h2 {
-  margin-top: 0;
-  font-size: 1.6em;
-  color: #ffffff;
+  margin-top: 0;
+  font-size: 1.6em;
+  color: #ffffff;
 }
 
 /* Link styling within wave */
 .wave a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  margin-right: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
 }
 
 .wave a:hover {
-  color: #ffffff;
-  text-decoration: underline;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* Paragraph styling within wave */
 .wave p {
-  margin: 15px 0 0;
-  line-height: 1.6;
-  color: #ffffff;
+  margin: 15px 0 0;
+  line-height: 1.6;
+  color: #ffffff;
 }
 
 /* Adjusted styling for links and hover effects */
 .wave a:visited {
-  color: #ffffff;
+  color: #ffffff;
 }
 
 p {
-  color: #ffffff; 
-  transition: color 0.3s; 
+  color: #ffffff; 
+  transition: color 0.3s; 
 }
 
 
 p:hover {
-  color: #ffcc00; 
+  color: #ffcc00; 
 }
-
-
-
-
